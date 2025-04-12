@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gimnasio GoodLife</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <div><a class="logo" href="index.html">GoodLife</a></div>
+        <nav class="nav">
+          <ul class="menu">
+            <li><button id="toggle-theme">🌙</button></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+              <a href="#">Clases</a>
+              <div class="mega-menu">
+                <a href="clases.html">Musculación</a>
+                <a href="clases.html">CrossFit</a>
+                <a href="clases.html">Yoga</a>
+                <a href="clases.html">Spinning</a>
+              </div>
+            </li>
+            <li><a href="entrenadores.html">Entrenadores</a></li>
+            <li><a href="precios.html">Precios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+    </header>
+
+  <!-- Filtros -->
+  <section class="contenedor">
+    <!-- Filtros y galería en el mismo flujo DOM -->
+    <input type="radio" name="filtro" id="todos" checked>
+    <label for="todos">Todos</label>
+  
+    <input type="radio" name="filtro" id="musculacion">
+    <label for="musculacion">Musculación</label>
+  
+    <input type="radio" name="filtro" id="crossfit">
+    <label for="crossfit">CrossFit</label>
+  
+    <input type="radio" name="filtro" id="yoga">
+    <label for="yoga">Yoga</label>
+  
+    <input type="radio" name="filtro" id="spinning">
+    <label for="spinning">Spinning</label>
+  
+    <div class="galeria">
+      <div class="clase musculacion">
+        <img src="img/MusculacionPrincipiante.jpg" alt="Musculación">
+        <div class="overlay">
+          <h3>Musculación Principante</h3>
+        </div>
+      </div>
+      <div class="clase crossfit">
+        <img src="img/CrossfitPrincipiante.jpg" alt="CrossFit">
+        <div class="overlay">
+          <h3>Crossfit Principante</h3>
+        </div>
+      </div>
+      <div class="clase yoga">
+        <img src="img/YogaPrincipiante.jpg" alt="Yoga">
+        <div class="overlay">
+          <h3>Yoga Principante</h3>
+        </div>
+      </div>
+      <div class="clase spinning">
+        <img src="img/Spinning2.jpg" alt="Spinning">
+        <div class="overlay">
+          <h3>Spinning</h3>
+        </div>
+      </div>
+      <div class="clase musculacion">
+        <img src="img/MusculacionAvanzado.jpg" alt="Musculación">
+        <div class="overlay">
+          <h3>Musculación Avanzado</h3>
+        </div>
+      </div>
+      <div class="clase crossfit">
+        <img src="img/CrossfitAvanzado.jpg" alt="CrossFit">
+        <div class="overlay">
+          <h3>Crossfit Avanzado</h3>
+        </div>
+      </div>
+      <div class="clase yoga">
+        <img src="img/YogaAvanzado.jpg" alt="Yoga">
+        <div class="overlay">
+          <h3>Yoga Avanzado</h3>
+        </div>
+      </div>
+      <div class="clase spinning">
+        <img src="img/SpinningForCiclysm.jpg" alt="Spinning">
+        <div class="overlay">
+          <h3>Spinning para Ciclismo</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="horarios">
+    <h2>Horarios Semanales</h2>
+    <div class="tabla-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Clase</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Lunes</td><td>CrossFit</td><td>08:00 - 10:00</td></tr>
+          <tr><td>Lunes</td><td>Musculacion</td><td>14:00 - 16:00</td></tr>
+          <tr><td>Martes</td><td>Yoga</td><td>09:00 - 10:00</td></tr>
+          <tr><td>Martes</td><td>Spinning</td><td>15:00 - 17:00</td></tr>
+          <tr><td>Miércoles</td><td>Musculación</td><td>08:00 - 10:00</td></tr>
+          <tr><td>Jueves</td><td>Yoga</td><td>10:00 - 12:00</td></tr>
+          <tr><td>Jueves</td><td>Spinning</td><td>14:00 - 15:00</td></tr>
+          <tr><td>Viernes</td><td>Crossfit</td><td>08:00 - 10:00</td></tr>
+          <tr><td>Viernes</td><td>Crossfit</td><td>16:00 - 18:00</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Suscribite a nuestro Newsletter</h3>
+        <form action="#" class="newsletter-form">
+          <input type="email" placeholder="Correo Electronico" required>
+          <button type="submit">Suscribirme</button>
+        </form>
+      </div>
+
+      <div class="footer-section">
+        <h3>Nuestras Redes Sociales</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+          <a href="https://www.youtube.com"><img src="img/youtube.png" alt="YouTube"></a>
+        </div>
+      </div>
+  
+      <div class="footer-section">
+        <h3>¿Dónde nos podes encontrar?</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.377479378767!2d-65.2996320918967!3d-24.19355574111945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0fd055b2d973%3A0x91a1f335fee3ca4e!2sKrown%20Gym!5e0!3m2!1ses!2sar!4v1744034802413!5m2!1ses!2sar" 
+          width="100%" 
+          height="150" 
+          style="border:0;">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 GoodLife Gym. Todos los derechos reservados</p>
+    </div>
+  </footer>
+  <script src="js/modoOscuro.js"></script>
+</body>
+</html>
